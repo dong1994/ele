@@ -1,10 +1,16 @@
 <template>
-    <div>我的</div>
+    <div class="profile">
+      <profile-bar></profile-bar>
+    </div>
 </template>
 
 <script>
+  import ProfileBar from './child/ProfileBar'
   export default {
-    name: "profile"
+    name: "profile",
+    components: {
+      ProfileBar
+    }
   }
 </script>
 

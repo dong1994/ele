@@ -1,10 +1,16 @@
 <template>
-    <div>订单</div>
+    <div class="order">
+      <order-bar></order-bar>
+    </div>
 </template>
 
 <script>
+  import OrderBar from './child/OrderBar'
   export default {
-    name: "Order"
+    name: "Order",
+    components: {
+      OrderBar
+    }
   }
 </script>
 
