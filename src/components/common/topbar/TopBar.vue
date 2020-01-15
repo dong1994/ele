@@ -1,6 +1,6 @@
 <template>
   <div class="header_bar">
-      <div class="left">
+      <div class="left" @click="backView">
         <slot name="left"></slot>
       </div>
       <div class="center">
@@ -14,7 +14,12 @@
 
 <script>
   export default {
-    name: "TopBar"
+    name: "TopBar",
+    methods: {
+      backView() {
+        this.$router.go(-1);
+      }
+    }
   }
 </script>
 
